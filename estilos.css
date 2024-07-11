@@ -58,7 +58,7 @@ header {
 }
 
 .header__nav box-icon {
-    display: none;
+    display: block;
 }
 
 .Home {
@@ -295,7 +295,7 @@ footer h2 {
     }
 
     .dimension {
-        display: block;
+        display: flex;
         width: 100vw;
         height: 100vh;
     }
@@ -309,8 +309,13 @@ footer h2 {
         justify-content: center;
         margin: auto;
         padding: auto;
+        text-align: center;
+        border-radius: 15px;
+        word-wrap: break-word;
+        width: 70vw;
+        border: 1px solid white;
+        background-color: #ff702a;
     }
-
 
 }
 
