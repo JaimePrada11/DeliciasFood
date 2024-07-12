@@ -7,6 +7,7 @@ body {
     font-size: 1.2rem;
     margin: 0;
     overflow-x: hidden;
+    text-align: center;
 }
 
 h1 {
@@ -17,7 +18,7 @@ h1 {
 
 h1:hover {
     color: white;
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 ul {
@@ -32,6 +33,15 @@ a {
 
 a:hover {
     color: #ff702a;
+}
+
+
+input {
+    display: none;
+}
+
+label {
+    display: none;
 }
 
 header {
@@ -62,8 +72,9 @@ header {
 }
 
 .Home {
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -106,9 +117,14 @@ button:hover {
 
 }
 
+.Home h1 {
+    text-transform: uppercase;
+}
+
 .About {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -133,7 +149,7 @@ button:hover {
 .About img {
     max-width: 100%;
     width: 40rem;
-    min-width: 20rem;
+    min-width: 15rem;
     margin: auto;
     height: auto;
 }
@@ -148,6 +164,7 @@ button:hover {
     align-items: center;
 
 }
+
 
 .Menu__list {
     display: flex;
@@ -251,6 +268,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 footer section {
@@ -258,11 +276,13 @@ footer section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
     font-size: 0.9rem;
 }
 
 footer h2 {
-    text-align: center;
     text-decoration: underline;
     text-decoration-color: #ff702a;
     text-decoration-thickness: 0.2rem;
@@ -272,16 +292,19 @@ footer h2 {
     display: flex;
     flex-direction: row;
     margin: auto;
-    color: #ff702a;
 
 }
 
 .bx {
-
     background-color: #ff702a;
     border-radius: 50%;
     padding: 0.4rem;
     margin: 1rem;
+}
+
+.bx:hover {
+    background-color: red;
+
 }
 
 .dimension {
@@ -333,25 +356,42 @@ footer h2 {
     header {
         background-color: #2c2b47;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
     }
 
     .header__nav {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
     }
 
     .header__list {
+        display: none
+    }
+
+    input:checked~.header__list {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    label {
+        box-sizing: border-box;
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .header__item {
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 100vw;
     }
 
     .Home {
@@ -364,6 +404,8 @@ footer h2 {
 
 
     .About {
+        width: 100vw;
+        height: auto;
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
