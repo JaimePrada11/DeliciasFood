@@ -1,6 +1,8 @@
 # Delicias Website 🍟
 
-Esta landing page está dedicada al rapero NF (Nathan John Feuerstein), y está diseñada para ofrecer una presentación impactante y concisa sobre el artista. La página proporciona una visión general de NF, incluyendo su biografía, discografía, tienda de merchandising y próximas giras. El objetivo es proporcionar una introducción eficaz al artista y facilitar el acceso a sus productos y eventos más importantes.
+![Delicias Website](/imagenes/Delicias%20Final.JPG)
+
+Esta landing page para un restaurante que ofrece una presentación visualmente atractiva y clara de su oferta. Diseñada para captar la atención de los visitantes. Con un diseño responsivo y una navegación intuitiva, la página busca proporcionar una experiencia de usuario fluida y promover los productos y servicios del restaurante de manera efectiva.
 
 ## Tabla de contenidos
 
@@ -14,7 +16,7 @@ Esta landing page está dedicada al rapero NF (Nathan John Feuerstein), y está 
 | 6 | [Estructura](#estructura-de-la-pagina) |
 | 7 | [Diseño](#diseño)|
 | 8 | [Archivos del Proyecto](#archivos-del-proyecto) |
-| 9 | [Fuentes y Recursos](#fuentes-y-recursos)|
+| 9 | [Estructura HTML](#estructura-html)|
 | 10 | [Autor](#autor)|
 | 11 | [Licencia](#licencia)|
 
@@ -61,6 +63,7 @@ Para visualizar y trabajar con esta página web, sigue estos pasos:
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Excalidraw](https://img.shields.io/badge/Excalidraw-%23F7C6C7.svg?style=for-the-badge&logo=excalidraw&logoColor=black)
 ![Google Fonts](https://img.shields.io/badge/Google%20Fonts-%23F5F5F5.svg?style=for-the-badge&logo=googlefonts&logoColor=black)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-%230078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
@@ -73,10 +76,14 @@ Para visualizar y trabajar con esta página web, sigue estos pasos:
 
 ### Herramientas de Desarrollo
 - **Visual Studio Code**: Editor de código.
+-  **Excalidraw**: Para la creación de diagramas, bocetos y el diseño de la página.
 
 
 ## Caracteristicas
 
+- **Responsive**: La página está diseñada para adaptarse a diferentes tamaños de pantalla.
+- **Diseño Atractivo**: El diseño de la página es visualmente atractivo.
+  
 
 
 ## Estructura de la pagina
@@ -91,10 +98,20 @@ El proyecto está organizado en las siguientes secciones principales:
 
 ## Diseño
 
-El diseño inicial de la página se baso de la siguiente pagina.
+El diseño inicial de la página se basó en el siguiente material:
 
 [Material](https://drive.google.com/file/d/1acVk7UOxJ-3wNT9RNI2WX0lLeb3clqNe/view) Diseño de la pagina
 
+> [!IMPORTANT]
+> **Nota:** Se recomienda utilizar Excalidraw para visualizar correctamente el material de diseño.
+
+
+### Diseño Pagina Ordenadores
+![Delicias Website](imagenes/Diseño.JPG)
+
+### Diseño Pagina Celulares
+
+![Delicias Website](/imagenes/Diseño%20Responsive.JPG)
 
 
 ## Archivos del Proyecto
@@ -104,11 +121,39 @@ El proyecto contiene los siguientes archivos:
 - **`index.html`**: Página principal del proyecto.
 - **`estilos.css`**: Archivo CSS que define los estilos para la página principal.
 
+## Estructura HTML
 
-## Fuentes y Recursos
-- [W3Schools CSS Media Queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) - Documentación sobre Media Queries en CSS para diseño responsivo.
-- [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Recursos completos y guías sobre HTML.
-- [MDN Web Docs - CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Referencia completa y tutoriales sobre CSS.
+La estructura básica del HTML de este proyecto está organizada de manera semántica para mejorar la accesibilidad. A continuación se muestra la organización principal de las secciones del HTML:
+
+```html
+    <header>
+        <nav>
+            <!-- Navegación -->
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <!-- Sección de Inicio -->
+        </section>
+
+        <section id="sobre-nosotros">
+            <!-- Sección Sobre Nosotros -->
+        </section>
+
+        <section id="menu">
+            <!-- Sección menu -->
+        </section>
+
+        <section id="servicios">
+            <!-- Sección Servicios -->
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+    </footer>
+```
 
 ## Autor
 Este proyecto fue desarrollado por Jaime Andres Prada Torres
